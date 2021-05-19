@@ -1,0 +1,49 @@
+:root {
+  --color-principal: #2e3142;
+  --color-noticia: #d8d6db;
+  --color-secundario: #adacb4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, .principal {
+  color: #333;
+}
+
+.cabecera, .pie {
+  background-color: var(--color-principal);
+  color: white;
+  height: 100px;
+}
+
+.pie p {
+  margin-bottom: 0;
+}
+
+.noticia {
+  background-color: var(--color-noticia);
+}
+
+.barra-lateral {
+  background-color: var(--color-secundario);
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.principal {
+  height: calc(100vh - 200px)
+}
+
+.noticia, .barra-lateral {
+  height: calc(100vh - 200px)
+}
+
+@media (max-width: 768px) {
+  .noticia, .barra-lateral {
+    height: calc(50vh - 100px)
+  }
+}
