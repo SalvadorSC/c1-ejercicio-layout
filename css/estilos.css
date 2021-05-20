@@ -42,8 +42,13 @@ nav ul li {
   height: calc(100vh - 200px)
 }
 
-@media (max-width: 768px) {
-  .noticia, .barra-lateral {
-    height: calc(50vh - 100px)
+@media (max-width: 465px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
